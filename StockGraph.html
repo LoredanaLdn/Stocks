@@ -1,0 +1,31 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="StockGraph.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+    <title>Stocks</title>
+  </head>
+  <body>
+    <header role="banner">
+       <h1 class="app-title">Search for stocks</h1>
+     </header>
+     <div class="container">
+       <input type="text" value="" class="searchbar" placeholder="Enter stock symbol">
+        <div class="header">
+          <div class="stock">
+            <div class="name"></div>
+            <div class="price"></div>
+            <div class="change"></div>
+          </div>
+        </div>
+      <hr>
+      <a href="#" id="viewChart">View chart</a>
+      <div id="stockChart" class="hidden">
+        <div id="tv-medium-widget-5e6f9"></div>
+      </div>
+      <div class="closeTime"></div>
+    </div>
+    <script src="StockGraph.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  </body>
+</html>
